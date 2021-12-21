@@ -3,8 +3,8 @@
 <head>
     <script type="text/javascript">
 //ESTRUCTURAS CONDICIONALES ANIDADAS EJERCICIO 8
-//Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
-//Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
+//1. Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+//2. Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
 /*Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras 
 y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.*/
 /*De un postulante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente información: 
@@ -16,6 +16,7 @@ Nivel medio: Porcentaje>=75% y <90%.
 Nivel regular: Porcentaje>=50% y <75%.
 Fuera de nivel: Porcentaje<50%.*/
 
+ //1
 numero1=3;
 numero2=5;
 numero3=8;
@@ -29,8 +30,19 @@ if(numero2>numero3){
 if(numero3>numero1){
     console.log(numero3);
 }
-        
 
+//2
+let numero=prompt("ingrese un número");
+
+    if (numero == 0) {
+            console.log('El número ingresado es cero');
+        } else {
+            if (numero > 0) {
+                console.log('El número ingresado es positivo');
+            } else {
+                console.log('El número ingresado es negativo');
+            }
+        }    
     </script>
 </head>
 
