@@ -6,27 +6,29 @@
         //si el importe es menor que 100 se suma al total
         //si el importe está entre 100-200 se suma al total, con un 20% de descuento
         //si el importe es mayor de 200 se suma al total, con un 40% de descuento
-        
-let importes = [50,200,600,350,150,225];
-      let importesConDescuento=[];
-  let suma=0;
-              
-    for(i=0;i<importes.length;i++){
-      if(importes[i]<100){
-        
-      } if(importes[i]>=100 && importes[i]<200){
-          importes [i]= importes[i]*20/100;
+
+        let importes = [50, 200, 600, 350, 150, 225];
+        let importesConDescuento = [];
+        let suma = 0;
+
+        for (i = 0; i < importes.length; i++) {
+            if (importes[i] < 100) {
+
+            } else if (importes[i] >= 100 && importes[i] < 200) {
+                importes[i] = importes[i] * 20 / 100;
             }
-        if(importes[i]>=200){
-          importes [i]= importes[i]*40/100;
+            else  {
+                importes[i] = importes[i] * 40 / 100;
+            }
+
+            importesConDescuento.push(importes[i]);
         }
-        
-        importesConDescuento.push(importes[i]);
-     }
-for(i=0;i<importesConDescuento.length;i++){
-  suma=suma + importesConDescuento[i];
-}
-    console.log(suma);              
+        for (i = 0; i < importesConDescuento.length; i++) {
+            suma = suma + importesConDescuento[i];
+        }
+        console.log(suma);
+
+
 
     </script>
 </head>
