@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+//tenemos dos palabras, sacar por pantalla la que tiene más vocales
+
+let palabra1="caballo";
+let palabra2="mesa";
+let contadorA=0;
+
+      for (let i=0;i<palabra1.length;i++) {
+
+        if (palabra1[i]=='a' || palabra1[i]=='e' ||palabra1[i]=='i' ||palabra1[i]=='o' ||palabra1[i]=='u') {
+          contadorA=contadorA+1;
+        }
+      }
+//console.log(contadorA);
+
+
+let contadorB=0;
+
+      for (let i=0;i<palabra2.length;i++) {
+
+        if (palabra2[i]=='a' || palabra2[i]=='e' ||palabra2[i]=='i' ||palabra2[i]=='o' ||palabra2[i]=='u') {
+          contadorB=contadorB+1;
+        }
+      }
+//console.log(contadorB);
+
+if(contadorA>contadorB){
+  console.log(palabra1);
+}
+    </script>
+</head>
+
+</html>
+

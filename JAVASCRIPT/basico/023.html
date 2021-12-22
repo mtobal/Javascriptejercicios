@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+// Dado un array de notas, eliminar los suspensos
+
+let notas=[2,3,4,5,7]
+let i=0;
+
+while (i<notas.length) {
+
+    if (notas[i]<5) {
+
+        notas.splice(i,1);
+    }else {
+
+        i++;
+    }
+}
+console.log(notas);
+   
+    </script>
+</head>
+
+</html>
