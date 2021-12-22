@@ -2,61 +2,90 @@
 
 <head>
     <script type="text/javascript">
-//ESTRUCTURAS CONDICIONALES ANIDADAS EJERCICIO 8
-//1. Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
-//2. Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
-/*Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras 
-y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.*/
-/*De un postulante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente información: 
-nombre del postulante, cantidad total de preguntas que se le realizaron y cantidad de preguntas que contestó correctamente
-Se pide confeccionar un programa que lea los datos del postulante e informe el nivel del mismo según el porcentaje 
+        //ESTRUCTURAS CONDICIONALES ANIDADAS EJERCICIO 8
+        //1. Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+        //2. Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
+        /*3. Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras
+        y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.*/
+
+        /*4.De un postulante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente información:
+        nombre del postulante, cantidad total de preguntas que se le realizaron y cantidad de preguntas que contestó 
+        correctamente.
+        Se pide confeccionar un programa que lea los datos del postulante e informe el nivel del mismo según el porcentaje
+        de respuestas correctas que ha obtenido, y sabiendo que:
+        Nivel superior: Porcentaje>=90%.
+        Nivel medio: Porcentaje>=75% y <90%.
+        Nivel regular: Porcentaje>=50% y <75%.
+        Fuera de nivel: Porcentaje<50%.*/
+
+
+
+       /* //1
+        numero1 = 3;
+        numero2 = 5;
+        numero3 = 8;
+
+        if (numero1 > numero2) {
+            console.log(numero1);
+        }
+        if (numero2 > numero3) {
+            console.log(numero2);
+        }
+        if (numero3 > numero1) {
+            console.log(numero3);
+        }
+
+         //2
+ let numero=prompt("ingrese un número");
+ 
+ if (numero == 0) {
+ console.log('El número ingresado es cero');
+  } else {
+ if (numero > 0) {
+ console.log('El número ingresado es positivo');
+ } else {
+ console.log('El número ingresado es negativo');
+  }
+  }
+          //3
+let numero=prompt("ingrese un número del 1 al 999");
+ 
+if (numero<10) {
+ console.log('El número ingresado tiene un dígito');
+
+  } else {
+    if (numero<100) {
+    console.log('El número ingresado tiene dos dígitos');
+
+    } else {
+     console.log('El número ingresado tiene tres dígitos');
+    }
+} */
+
+/*let nombre;
+nombre = prompt('Ingrese el nombre del postulante');*/
+let cantpreguntas;
+cantpreguntas = parseInt(prompt('Cantidad de preguntas del test'));
+let cantcorrectas;
+cantcorrectas = parseInt(prompt('Cantidad de preguntas correctas'));
+/*Se pide confeccionar un programa que lea los datos del postulante e informe el nivel del mismo según el porcentaje
 de respuestas correctas que ha obtenido, y sabiendo que:
-Nivel superior: Porcentaje>=90%.
-Nivel medio: Porcentaje>=75% y <90%.
-Nivel regular: Porcentaje>=50% y <75%.
-Fuera de nivel: Porcentaje<50%.*/
+        Nivel superior: Porcentaje>=90%.*/
 
- //1
-numero1=3;
-numero2=5;
-numero3=8;
-
-if(numero1>numero2){
-    console.log(numero1);
+if(cantcorrectas*100/cantpreguntas>=99){
+    console.log("Estás en nivel superior");
+}   else {
+    if (75<=cantcorrectas*100/cantpreguntas<99){
+    console.log("Estás en nivel medio");
+} else {
+    if(50<=cantcorrectas*100/cantpreguntas<75){
+    console.log("Estás en nivel regular");
+} else {
+    console.log("Estás fuera de nivel");
 }
-if(numero2>numero3){
-    console.log(numero2);
 }
-if(numero3>numero1){
-    console.log(numero3);
 }
-
-//2
-let numero=prompt("ingrese un número");
-
-    if (numero == 0) {
-            console.log('El número ingresado es cero');
-        } else {
-            if (numero > 0) {
-                console.log('El número ingresado es positivo');
-            } else {
-                console.log('El número ingresado es negativo');
-            }
-        }   
- //3
- let numero=prompt("ingrese un número del 1 al 999");
-
-    if (numero<10) {
-            console.log('El número ingresado tiene un dígito');
-        } else {
-            if (numero<100) {
-                console.log('El número ingresado tiene dos dígitos');
-            } else {
-                console.log('El número ingresado tiene tres dígitos');
-            }
-        }    
-        
-    </script>
+     </script>
 </head>
 
 </html>
