@@ -11,14 +11,14 @@
 
             for (i = 0; i <= lista.length; i++) {
                 if (lista[i] >= 100) {
-
-                }
-                return (listaMayoresCien);
+                 listaMayoresCien.push(lista[i]);
+                }               
             }
+           return listaMayoresCien;
         }
         lista = [50, 75, 100, 200];
         console.log(MayoresDeCien(lista));
-
+        
     </script>
 </head>
 
