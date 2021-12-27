@@ -3,22 +3,23 @@
 <head>
     <script type="text/javascript">
 
-        //
+        // PENDIENTE DE TERMINAR!!
 
         //Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.
 
         function ascendente(x, y, z) {
 
             if (x > y && x > z) {
-                return x;
+                return(x,y,z);
             }
             else {
                 if (y>x && y > z) {
-                    return y;
+                    return(x,z,y);  
                 }
                 else {
-                     return z;
+                    return(z,x,y);
                       }
+                      
                     }
                 }                   
         console.log(ascendente(8, 5, 10));
