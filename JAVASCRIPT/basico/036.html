@@ -6,7 +6,7 @@
         /*Dada una funcion que recibe un array de texto, 
         devuelve un array con el número de vocales que tiene*/
 
-        function listaTexto(lista) {
+       /* function listaTexto(lista) {
             let contador = 0;
 
             for (j = 0; j < lista.length; j++) {
@@ -20,11 +20,30 @@
             }
             return contador;
         }
-        console.log(listaTexto("murcielago"));
+        console.log(listaTexto("murcielago"));*/
 
+/* Dada una funcion que recibe un array de cadenas de texto, sumar todas las vocales que hay*/
 
+        function listaTexto(lista) {
+            let contador = 0;
+
+        for (i = 0; i < lista.length; i++){
+            for (j = 0; j < lista.length; j++) {
+
+                if (lista[i][j] == 'a') contador++;
+                if (lista[i][j] == 'e') contador++;
+                if (lista[i][j] == 'i') contador++;
+                if (lista[i][j] == 'o') contador++;
+                if (lista[i][j] == 'u') contador++;
+            }
+            }
+            return contador;
+        }
+        lista = ["hola", "que", "tal", "estas"];
+        console.log(listaTexto(lista));
 
     </script>
 </head>
 
 </html>
+
