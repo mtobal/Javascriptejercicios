@@ -5,20 +5,14 @@
 
 // función que recibe un numero y que calcule su factorial
 
-function factorial (x) {
-    let producto=0;
-
-    for(i=x;i>=1;i--){
-    
-    producto = x*(x - i); 
-
-       console.log(x);  
-    }    
+function factorial (n) {
+	let producto = 1; 
+	for (i=1; i<=n; i++) {
+		producto = producto * i; 
+	}
+	return producto; 
 }
-factorial(5);
-
-
-     
+console.log(factorial(5));   
 
     </script>
 </head>
