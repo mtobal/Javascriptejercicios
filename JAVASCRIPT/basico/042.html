@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+/* array con edades, se recorre y se devuelve un array 
+con los años que quedan para jubilarse*/
+
+
+function jubilacion(edades) {
+    let diferenciaArray = [];
+
+    for (i = 0; i <edades.length; i++) {
+        
+        if (edades[i] < 65) {
+
+             diferencia = 65 - edades[i];
+        } 
+        diferenciaArray.push(diferencia);         
+     }         
+     return diferenciaArray;
+
+ }
+ edades = [40, 55, 62,28];
+ console.log(jubilacion(edades));
+
+    </script>
+</head>
+
+</html>
