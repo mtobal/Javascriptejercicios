@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+
+/* 2 arrays de numeros, generar un array con los numeros mas bajos de cada posicion. 
+Elegir el valor minimo
+[2,3,4,5]
+[1,6,8,7]
+[1,3,4,5]  */
+
+/*let lista1= [2,3,4,5];
+let lista2= [1,6,8,7];
+let valorMinimo= [];
+
+for(i=0;i<lista1.length;i++){
+    
+        if (lista1[i]<lista2[i]){
+            valorMinimo.push(lista1[i]);
+        }
+        else{
+            valorMinimo.push(lista2[i]);
+            }
+            
+        }              
+        
+        console.log(valorMinimo);*/
+
+function valorMinimo (lista1,lista2){
+    let valorMinimoarray=[];
+
+for(i=0;i<lista1.length;i++){
+    
+    if (lista1[i]<lista2[i]){
+        valorMinimoarray.push(lista1[i]);
+    }
+    else{
+        valorMinimoarray.push(lista2[i]);
+        }        
+} 
+return valorMinimoarray;
+}    
+let lista1= [2,3,4,5];
+let lista2= [1,6,8,7]; 
+console.log(valorMinimo(lista1,lista2)); 
+  
+    </script>
+</head>
+
+</html>
+
+
+
